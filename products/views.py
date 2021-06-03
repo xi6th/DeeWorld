@@ -13,9 +13,12 @@ class HomeView(ListView):
     model = Item
     template_name = "home.html"
 
-class Product(DetailView):
-    model = Item
-    template_name = "product.html"
+# class Product(DetailView):
+#     model = Item
+#     template_name = "product.html"
+
+def Products(request):
+    return render(request,"product.html")
 
 def checkout(request):
     return render(request,"checkout.html")

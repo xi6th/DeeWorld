@@ -3,7 +3,7 @@ from .views import (
     checkout,
     HomeView,
     # ItemDetailView,
-    Product
+    Products
 
 )
 app_name = 'products'
@@ -12,5 +12,5 @@ urlpatterns = [
     path('', HomeView.as_view(), name='home'),
     path('home', HomeView.as_view(), name='home'),
     path('checkout/', checkout),
-    path('product/', Product, name='product'),
+    path('product/', Products, name='product'),
 ]
