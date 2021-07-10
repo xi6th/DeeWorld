@@ -11,7 +11,7 @@ app_name = 'products'
 urlpatterns = [
     path('', HomeView.as_view(), name='home'),
     path('home', HomeView.as_view(), name='home'),
-    path('checkout/', checkout),
-    #path('product/', Products, name='product'),
-    path('product/', Products)
+    #path('checkout/', checkout),
+    path('product/', Products, name='product'),
+   #path('product/', Products)
 ]
